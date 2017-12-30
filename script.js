@@ -16,3 +16,12 @@ $('.percentage').keyup(function(e) {
   percentage = e.target.value;
   calculate();
 });
+
+$('.increase').click(function() {
+  var parent = $(this).parent();
+  if ($(this)[0].className === "increase") {
+    console.log(parent)
+  } else if ($(this)[0].className === "decrease") {
+  }
+  calculate();
+});

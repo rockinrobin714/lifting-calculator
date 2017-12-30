@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  background-color: #F3FAB6;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  color: #005A31;
 }
 
 section {
@@ -12,16 +18,32 @@ section {
   flex-direction: column;
 }
 
+label {
+  margin-right: 10px;
+}
+
 button {
-  text-decoration: none;
   display: inline-block;
   transition: all .2s;
   position: relative;
+  margin: 5px;
+
+  background-color: #A8CD1B;
+  text-decoration: none;
 }
 
 .increase, .decrease {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  padding: 20px;
+}
+
+.bar {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+
+  font-size: 18px;
 }
 
 .selected {
