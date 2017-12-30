@@ -12,6 +12,18 @@ section {
   flex-direction: column;
 }
 
+button {
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+}
+
+.increase, .decrease {
+  border-radius: 50%;
+  padding: 20px;
+}
+
 .selected {
 
 }
