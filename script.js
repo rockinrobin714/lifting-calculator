@@ -4,6 +4,8 @@ var barWeight = 45;
 
 function calculate() {
   var total =  (oneRep * percentage * .01 - barWeight) / 2;
+  $('.one-rep-max').val(oneRep);
+  $('.percentage').val(percentage);
   $('.total').val(total);
 };
 
@@ -17,11 +19,17 @@ $('.percentage').keyup(function(e) {
   calculate();
 });
 
-$('.increase').click(function() {
-  var parent = $(this).parent();
+$('.increase, .decrease').click(function() {
+  var incrementor;
   if ($(this)[0].className === "increase") {
-    console.log(parent)
+    incrementor = 5;
   } else if ($(this)[0].className === "decrease") {
+    incrementor = -5;
+  }
+  if (~$(this).parent()[0].innerText.indexOf('Rep Max')) {
+    oneRep += incrementor;
+  } else if (~$(this).parent()[0].innerText.indexOf('Percentage')) {
+    percentage += incrementor;
   }
   calculate();
 });
