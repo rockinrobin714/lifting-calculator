@@ -25,3 +25,15 @@ $('.increase').click(function() {
   }
   calculate();
 });
+
+$('.bar').click(function() {
+  $('.bar').removeClass('selected');
+  $(this).addClass('selected');
+  var bar = ($(this).text());
+  if (bar === 'None') {
+    barWeight = 0;
+  } else {
+    barWeight = parseInt(bar);
+  }
+  calculate();
+})
