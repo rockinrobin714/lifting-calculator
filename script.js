@@ -5,7 +5,7 @@ var barWeight = 45;
 function calculate() {
   var total =  (oneRep * percentage * .01 - barWeight) / 2;
   $('.one-rep-max').val(oneRep);
-  $('.percentage').val(percentage);
+  $('.percentage').val(percentage + "%");
   $('.total').val(total);
 };
 

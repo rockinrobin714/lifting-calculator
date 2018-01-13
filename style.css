@@ -30,6 +30,19 @@ button {
 
   background-color: #A8CD1B;
   text-decoration: none;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 1px 1px 2px #ccc;
+     -moz-box-shadow: 1px 1px 2px #ccc;
+          box-shadow: 1px 1px 2px #ccc;
+  cursor: pointer;
+}
+
+button:focus {
+  /*background: #e0e0e0;*/
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 4px #ccc;
+     -moz-box-shadow: inset 0px 0px 4px #ccc;
+          box-shadow: inset 0px 0px 4px #ccc;
 }
 
 .increase, .decrease {
